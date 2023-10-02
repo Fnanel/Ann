@@ -91,9 +91,7 @@ ann.fit(x_train,y_train, batch_size= 32, epochs= 100)
 
 
 
-"""**Homework**
-
-Use our ANN model to predict if the customer with the following informations will leave the bank:
+Useing ANN model to predict if the customer with the following informations will leave the bank or not:
 
 Geography: France
 
@@ -118,6 +116,4 @@ Estimated Salary: \$ 50000
 So, should we say goodbye to that customer ?
 
 **Solution**
-"""
-
 print(ann.predict(sc.transform([[1,0,0, 600, 1, 40, 3, 60000, 2, 1,1, 50000]]))>0.5)
